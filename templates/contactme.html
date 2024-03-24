@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Message </title>
+  {%include 'bootstrap.html' %}
+  </head>
+  <body>
+    {%include 'banner.html' %}
+<h4> contact me  </h4>
+<form action="/message" method="post">  
+<div>  
+  <label> Full name </label><br>
+  <input type="text" name="full_name" placeholder="Leena Alasous">
+</div>
+<div>  
+<label> E-mail </label><br>
+   <input type="text" name="email" placeholder="Leena Alasous@yxt.com">
+</div>
+<div> 
+  <label> Message </label><br>
+   <textarea name="message" placeholder="salam I'm Leena Alasous">
+   </textarea>
+</div>
+  <input type="submit">
+</form>
+  </body>
+</html>

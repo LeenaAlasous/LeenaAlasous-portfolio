@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-devtce-width, inttial-
+    scale=1">
+   
+    <title>{{myname}} Project</title> 
+   {% include 'bootstrap.html' %}
+    </head>
+   
+  </head>
+<body>
+  <div class="container">
+  <h1 class="text-center" >Leena Project 2024</h1>
+    {% include 'banner.html' %}
+
+  <h2 class="text-center" > About me</h2>
+  <p>I am an artificial intelligence student with a strong foundation in programming languages such as Python, R, and Java, allowing me to develop and implement AI algorithms effectively. My expertise in machine learning, data analysis, and statistical modeling enables me to extract valuable insights from complex datasets. Beyond technical skills, I possess excellent communication abilities, enabling me to convey complex concepts to diverse audiences. I am a critical thinker and creative problem solver, constantly seeking innovative solutions to AI challenges. With a curiosity for learning and staying up-to-date with the latest advancements, I embrace new technologies and adapt quickly. Additionally, I excel in collaborative environments, leveraging my interpersonal skills to contribute effectively to team projects. Overall, I am a well-rounded AI student equipped with a diverse skill set, poised to make significant contributions in the field of artificial intelligence.</p>
+  <h2 class="text-center mt-2 mb-4" >My Projects</h2>
+  <div>
+    {% for item in myskils %}
+    {%include 'Myprojects.html' %}
+    {% endfor %}
+    </div>
+  <div class="text-center">
+    <a href="/contactme" type="button" class="btn btn-secondary">Contact me</a>
+  <p> Copy right,  {{myname}}</p>
+</div>
+  </div>
+</body>
+</htmls
+  
